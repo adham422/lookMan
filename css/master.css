@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-tittle {
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(9, 198, 9);
+    font-size: 1.1em;
+    font-weight: 600;
+    justify-content: space-around;
+    min-height: 100px;
+    align-items: center;
+}
+.header-tittle .tittle {
+ font-size: 2.2em;
+ text-transform: uppercase;
+ color: yellow;
+}
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.header-links a {
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-left: 1.2em;
+    color: rgb(159, 146, 146);
+    transition-duration: 0.5s;
+    font-weight: 800;
+
+}
+.header-links a:hover {
+    color: orange;
+    transition: 0.5s;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #000;
+  padding: 1.1em;
+}
+.home .home-one {
+    position: relative;
+    top: 8em;
+}
+.home .home-one h1{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+.home .home-one h3{
+    text-transform: capitalize;
+    color: rgb(251, 255, 0);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.home .home-one p{
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin: 2em auto;
+}
+.home .home-one button{
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 1px;
+    width: fit-content;
+    background-color: greenyellow;
+    width: fit-content;
+    height: 50px;
+    padding: 1em;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.home .home-img img{
+    width: 400px;
+    position: relative;
+    top: 3em;
+    margin: auto;
+    padding-left: 1em;
+    
+}
+.icon {
+    padding: 0.5em;
+}
+.services {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+    background-color:#eee;
+    min-height: fit-content;
+}
+.services-one {
+    padding: 2em;
+}
+.services-one h3 {
+    color: rgb(136, 255, 0);
+    font-size: 1.8em;
+}
+.services-one h1 {
+    font-size: 3.5em;
+    margin: 0.5em 0;
+}
+.services-one p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.services-one button {
+    font-size: 1em;
+    margin: 3em 0;
+    height: 3em;
+    width: 10em;
+    text-transform: uppercase;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.services-one button:hover {
+    color: #fff;
+    background-color: black;
+    transition-duration: 1s;
+}
+.services-two {
+    margin-top: 3.5em;
+}
+.services-two img {
+    width: 30em;
+}
+.about {
+    text-align: center;
+    background-color: #000;
+    min-height: fit-content;
+}
+.about h1 ,.about p {
+    color: #fff;
+}
+.about .first {
+    text-align: center;
+    padding: 1em;
+}
+.about .first h1 {
+    font-size: 1.5em;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+.about .first p{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.about .first button {
+    width: 7em;
+    height: 2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+   background-color: greenyellow;
+  
+}
+.about .first a
+{
+    text-decoration: none;
+    color: #000;
+}
+.about-one {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.imag {
+    display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   background-color: orange;
+    padding: 3em;
+    margin:5em 10em;
+    
+}
+.imag .one h1,.imag .one h2{
+    color: #fff;
+    margin: 1.5em auto;
+    font-size: 1.5em;
+}
+.contact h1{
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+}
+form {
+    margin: 2em;
+}
+form input ,textarea{
+    margin-bottom: 2em;
+    border:none;
+    border-bottom: 1px solid #000;
+    width: 28em;
+    padding: 1em;
+}
+form .send {
+    
+    width: 5em;
+   
+    
+    border: none;
+    background-color: orange;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+form {
+    text-align: center;
+}
+.iconss {
+    background-color:#000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height:50px;
+    
+}
+.footer {
+    text-align: center;
+    max-height: 80px;
+    padding: 0.5em;
+    background-color: #eee;
+}
+/* ==================responisve design ====================*/
+@media (max-width:2000px)
+{
+    .icon i{
+        display: none;
+      }
+     
+}
+
+@media (max-width: 870px) {
+    .home {
+        width: 100%;
+        height: 1100px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .icon i{
+        display: none;
+      }
+
+      .services {
+        grid-template-columns: repeat(1,1fr);
+    }
+    form input ,textarea{
+       
+        width: 420;
+       
+    }
+    .services-two img {
+        text-align: center;
+        width: 400px;
+    }
+    .about-one {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media (max-width: 443px) {
+    .home .home-img img{
+        width: 290px;
+        position: relative;
+        top: 3em;
+        margin: auto;
+        padding-left: 0;
+        text-align: center;
+        
+      }
+      .icon i{
+        display: none;
+      }
+      .services-two img {
+        text-align: center;
+        width: 200px;
+    }
+    .about-one {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .imag {
+        margin: 2em 1em;
+    }
+    form input ,textarea{
+       
+        width: 260px;
+       
+    }
+    }
+@media (max-width: 330px) {
+    .icon i{
+        display: block;
+      }
+    .home .home-img img{
+        width: 200px;
+        position: relative;
+        top: 3em;
+        margin: auto;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    .home .home-one h1 {
+        font-size: 3em;
+    }
+    .home .home-one button {
+        font-size: .5em;
+        height: fit-content;
+        width: fit-content;
+    }
+    .header-tittle .a {
+        display: none;
+    }
+    .header-tittle .tittle {
+        font-size: 1.8em;
+    }
+    .header-links {
+        padding: 0.5em;
+        justify-content: flex-start;
+    }
+    .header-links {
+        display: none;
+    }
+    .icon:hover + .header-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.1em;
+    }
+    .services-one p {
+       
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+    .services-one h1 {
+        font-size: 2em;
+    }
+    .about-one {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .services-one {
+        padding: 0em;
+    }
+    .imag {
+        margin: 2em 1em;
+    }
+    form input ,textarea{
+       
+        width: 100px;
+       
+    }
+}
+
+
